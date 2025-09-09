@@ -1,0 +1,51 @@
+.toggle-div {
+  display: flex;
+  float: right;
+  margin: 2rem;
+  gap: 5px;
+}
+
+.toggle-bar-div {
+  background-color: #a729f5;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-div img {
+  width: 20%;
+}
+
+.toggle-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  margin-left: 3px;
+  background-color: white;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.logo-icon img {
+  width: 17%;
+  background-color: hsl(278, 100%, 95%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 770px) {
+  .navbar {
+    width: 85%;
+    margin-inline: auto;
+  }
+}

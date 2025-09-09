@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: hsl(220, 37%, 97%);
+  color: #313e51;
+  background-image: url(../assets/pattern-background-mobile-light.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main {
+  width: 90%;
+  margin-inline: auto;
+  clear: both;
+}
+
+.toggle-div {
+  display: flex;
+  float: right;
+  margin: 2rem;
+  gap: 5px;
+  clear: both;
+}
+
+.toggle-bar-div {
+  background-color: #a729f5;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-div img {
+  width: 20%;
+}
+
+.toggle-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  margin-left: 3px;
+  background-color: white;
+}
+
+.header {
+  clear: both;
+  font-size: 2.1rem;
+}
+
+#frontend {
+  display: block;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+#pick {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.subjects {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  margin-block: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.subjects:hover {
+  cursor: pointer;
+  outline: 2px solid #a729f5;
+}
+
+.subjects img {
+  width: 8%;
+}
+
+/* Dark Mode  */
+
+body.dark-mode {
+  background-color: #313e51;
+  color: white;
+  background-image: url("./images/pattern-background-mobile-dark.svg");
+}
+
+body.dark-mode .subjects {
+  background-color: hsl(215, 27%, 32%);
+}
+
+body.dark-mode .toggle-thumb {
+    margin-left: 22px;
+}
